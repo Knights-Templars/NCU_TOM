@@ -19,6 +19,7 @@ from django.urls import include, path
 from django.views import debug
 
 urlpatterns = [
+    path('broker/', include('broker.urls')),
     path('api/', include('targets.urls')),
     path('api/', include('observations.urls')),
     path('api/', include('dataproducts.urls')),

@@ -1,0 +1,20 @@
+<h1> ALERCE Targets</h1>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>RA</th>
+        <th>DEC</th>
+        <th>ID</th>
+        <th>DISCOVERED</th>
+    </tr>
+    {% for t in targets %}
+    <tr>
+        <td>{{ t.name }}</td>
+        <td>{{ t.ra }}</td>
+        <td>{{ t.dec }}</td>
+        <td>{{ t.alert_id }}</td>
+        <td>{{ t.discovered_at }}</td>
+    </tr>
+    {% endfor %}
+</table>
